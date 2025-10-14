@@ -1,22 +1,26 @@
-:root{
+:root {
     --cor-de-fundo: #0B0A14;
     --branco-principal: white;
     --botão-azul: #167bf7;
     --cinza-secundario: #c0c0c0;
+    --fonte-principal: "Inter";
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
 
-body{
+body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.principal{
+.principal {
     background-image: url(../img/background-img.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -24,8 +28,93 @@ body{
     text-align: center;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
 }
+
+.container__logo {
+    margin: 0 10rem;
+
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+}
+
+.container__imagem {
+    margin: 1rem 0 2rem 0;
+}
+
+.container__botao {
+    display: block;
+    background-color: var(--botão-azul);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.container__botao--secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagem {
+    width: 70%;
+}
+
+.container__descricao {
+    padding: 2rem;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.teste__imagem {
+    width: 90%;
+}
+
+.meio__imagem {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+}
+
+.dispositivos__lista {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+.lista__item{
+    font-size: 2rem;
+    color: var(--branco-principal);
+} 
