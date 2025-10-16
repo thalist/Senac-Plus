@@ -4,6 +4,10 @@
     --botão-azul: #167bf7;
     --cinza-secundario: #c0c0c0;
     --fonte-principal: "Inter";
+    --efeito-lista: purple;
+    --azul-efeito-botao: #E0F7FA;
+
+
 }
 
 * {
@@ -100,7 +104,7 @@ body {
     width: 80%;
 }
 
-.dispositivos{
+.dispositivos {
     text-align: center;
 }
 
@@ -112,9 +116,83 @@ body {
     justify-content: center;
     list-style: none;
     display: flex;
+    margin-top: 2rem;
 }
 
-.lista__item{
+.lista__item {
     font-size: 2rem;
     color: var(--branco-principal);
-} 
+}
+
+.rodape {
+    text-align: center;
+    margin: 5rem;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+
+}
+
+.rodape__texto {
+    margin: 1rem 0;
+    color: var(--cinza-secundario);
+    font-size: 0.8rem;
+
+}
+
+.lista__link a:hover {
+    color: var(--botão-azul);
+}
+
+.lista__link a:active {
+    color: var(--efeito-lista);
+}
+
+.container__botao:hover {
+    background-color: var(--azul-efeito-botao);
+    color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__logo {
+        margin: 2rem 2rem;
+        
+    }
+
+    .secundario {
+        text-align: center;
+        margin: 0;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+
+}
